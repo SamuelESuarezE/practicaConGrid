@@ -1,6 +1,65 @@
+@import url(variables.css);
+
 * {
     padding: 0;
     margin: 0;
     text-decoration: none;
     box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    padding: 30px;
+    grid-auto-rows: 50px;
+    width: 800px;
+    height: 700px;
+    background-color: var(--color-secundary);
+    border-radius: 10px;
+    margin: 15px auto;
+    box-shadow: 3px 3px 5px var(--color-transparencia);
+    grid-template-areas: 
+    "MacBookAir Apps Apps"
+    "MacBookAir Apps Apps"
+    "BigScreen BigScreen Pro"
+    "BigScreen BigScreen Pro"
+    ;
+}
+
+.container div {
+    border-radius: 10px;
+    
+    background-color: var(--color-primary);
+}
+
+.item1 {
+    grid-area: MacBookAir;
+}
+
+.item2 {
+    grid-area: Apps;
+}
+
+.item3 {
+    grid-area: BigScreen;
+}
+
+.item4 {
+    grid-area: Pro;
+}
+
+@media (width < 800px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        width: 100vw;
+        grid-template-areas: 
+        "MacBookAir"
+        "Apps"
+        "BigScreen"
+        "Pro"
+        ;
+    }
 }
