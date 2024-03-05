@@ -4,3 +4,119 @@
     text-decoration: none;
     box-sizing: border-box;
 }
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    padding: 20px 80px;
+    gap: 15px;
+    grid-template: repeat(20, 1fr) / repeat(20, 1fr);
+    grid-template-areas: 
+    "nits nits nits nits nits nits gps gps gps gps gps session session session carbon carbon carbon carbon carbon carbon"
+    "nits nits nits nits nits nits gps gps gps gps gps session session session carbon carbon carbon carbon carbon carbon"
+    "nits nits nits nits nits nits gps gps gps gps gps session session session carbon carbon carbon carbon carbon carbon"
+    "nits nits nits nits nits nits gps gps gps gps gps session session session carbon carbon carbon carbon carbon carbon"
+    "nits nits nits nits nits nits gps gps gps gps gps session session session carbon carbon carbon carbon carbon carbon"
+    "nits nits nits nits nits nits main main main main main main main main carbon carbon carbon carbon carbon carbon"
+    "nits nits nits nits nits nits main main main main main main main main carbon carbon carbon carbon carbon carbon"
+    "mountain mountain mountain modular modular modular main main main main main main main main carbon carbon carbon carbon carbon carbon"
+    "mountain mountain mountain modular modular modular main main main main main main main main battery battery battery dive dive dive"
+    "mountain mountain mountain modular modular modular main main main main main main main main battery battery battery dive dive dive"
+    "mountain mountain mountain modular modular modular main main main main main main main main battery battery battery dive dive dive"
+    "mountain mountain mountain modular modular modular main main main main main main main main battery battery battery dive dive dive"
+    "newBand newBand newBand newBand newBand newBand main main main main main main main main action action action action action action"
+    "newBand newBand newBand newBand newBand newBand main main main main main main main main action action action action action action"
+    "newBand newBand newBand newBand newBand newBand main main main main main main main main action action action action action action"
+    "S9 S9 S9 S9 siri siri cycling cycling finding finding finding finding light light gesture gesture gesture gesture gesture gesture"
+    "S9 S9 S9 S9 siri siri cycling cycling finding finding finding finding light light gesture gesture gesture gesture gesture gesture"
+    "S9 S9 S9 S9 siri siri cycling cycling finding finding finding finding light light gesture gesture gesture gesture gesture gesture"
+    "S9 S9 S9 S9 siri siri cycling cycling finding finding finding finding light light gesture gesture gesture gesture gesture gesture"
+    "S9 S9 S9 S9 siri siri cycling cycling finding finding finding finding light light gesture gesture gesture gesture gesture gesture"
+
+
+
+    ;
+}
+
+.item {
+    background-color: #ececec;
+    border-radius: 30px;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.item:first-child {
+    grid-area: nits;
+}
+
+
+.item:nth-child(2){
+    grid-area: mountain;
+
+}
+
+.item:nth-child(3){
+    grid-area: modular;
+}
+
+.item:nth-child(4){
+    grid-area: newBand;
+}
+
+.item:nth-child(5){
+    grid-area: S9;
+}
+
+.item:nth-child(6){
+    grid-area: siri;
+}
+
+.item:nth-child(7){
+    grid-area: gps;
+}
+
+.item:nth-child(8){
+    grid-area: session;
+}
+
+.item:nth-child(9){
+    grid-area: main;
+}
+
+.item:nth-child(10){
+    grid-area: cycling;
+}
+
+.item:nth-child(11){
+    grid-area: finding;
+}
+
+.item:nth-child(12){
+    grid-area: light;
+}
+
+.item:nth-child(13){
+    grid-area: carbon;
+}
+
+.item:nth-child(14){
+    grid-area: battery;
+}
+
+.item:nth-child(15){
+    grid-area: dive;
+}
+
+.item:nth-child(16){
+    grid-area: action;
+}
+
+.item:nth-child(17){
+    grid-area: gesture;
+}
