@@ -17,7 +17,7 @@
     grid-auto-rows: 50px;
     width: 800px;
     max-width: 100vw;
-    height: 90vh;
+    height: 800px;
     background-color: var(--color-secundary);
     border-radius: 10px;
     margin: 15px auto;
@@ -145,6 +145,14 @@
         ;
     }
 
+    .item1 {
+        justify-content: center;
+    }
+
+    .item4 {
+        justify-content: center;
+    }
+
     .item2 {
         display: flex;
         grid-area: Apps;
@@ -159,9 +167,5 @@
         right: 8%;
         object-fit: contain;
         width: 80%;
-    }
-
-    .item3 img {
-        margin-top: 80px;
     }
 }
